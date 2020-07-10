@@ -9,5 +9,8 @@ class Home(Resource):
     def get(self):
         return "Fuck Yeah", 200
 
+    def post(self):
+        pass
 
-api.add_resource(Home, '/', methods=['GET'])
+
+api.add_resource(Home, '/get', methods=['GET'])
